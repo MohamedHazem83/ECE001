@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Database Systems</title>
+        <style>
+            body {
+                margin-left: 20px;
+                background-color: rgb(212, 170, 84);
+            }
+            ul li {
+                display: inline;
+                list-style-type: none;
+                padding: 50px 50px 30px 50px;
+                margin: auto;
+                background-color: rgb(0, 0, 0);
+            }
+            a {
+                text-decoration: none;
+                color: white;
+            }
+            h2 {color: red;}
+            td {
+                padding-left: 10px;
+            }
+            caption {margin-bottom: 10px;}
+        </style>
+    </head>
+    <body>
+        <ul class="navbar">
+            <li> <a href="index.html"> Main Page </a> </li>
+            <li> <a href="Network Databases.html"> Network Databases </a> </li>
+            <li> <a href="Relational database.html"> Relational Database </a> </li>
+            <li> <a href="Graph Databases.html"> Graph Databases </a> </li>
+            <li> <a href="Document databases.html"> Document Databases </a> </li>
+        </ul>
+        <br>
+        <h2>Graph Databases</h2>
+        <div>
+            Graph databases are purpose-built to store and navigate relationships. Relationships are first-class citizens in graph databases, and most of the value of graph databases is derived from these relationships. Graph databases use nodes to store data entities, and edges to store relationships between entities. An edge always has a start node, end node, type, and direction, and an edge can describe parent-child relationships, actions, ownership, and the like. There is no limit to the number and kind of relationships a node can have.
+        </div>
+        <br>
+
+        <table border="2">
+            <caption><i>Difference between Relational Databases and Graph Databases:</i></caption>
+
+            <tr>
+                <th>Relational Databases</th>
+                <th>Graph Databases</th>
+            </tr>
+            <tr>
+                <td>Tabular form</td>
+                <td>Graph form</td>
+            </tr>
+            <tr>
+                <td>Stores highly structured data</td>
+                <td>Maintains semi structured data</td>
+            </tr>
+            <tr>
+                <td>Depends on key constraints</td>
+                <td>Relationship are first-class citizens of the Graph Database model – Constraints can be represented using relationships</td>
+            </tr>
+            <tr>
+                <td>Data is normalized, meaning lots of joins, affecting speed</td>
+                <td>Better Performance</td>
+            </tr>
+            <tr>
+                <td>Expensive with join operations</td>
+                <td>Eliminates the need for an expensive search / match computation</td>
+            </tr>
+            <tr>
+                <td>Does not scale out horizontally</td>
+                <td>High scalability</td>
+            </tr>
+
+        </table>
+
+    </body>
+</html>
